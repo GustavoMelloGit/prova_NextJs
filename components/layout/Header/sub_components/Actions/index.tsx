@@ -6,7 +6,7 @@ interface IActions extends ButtonHTMLAttributes<HTMLButtonElement> {
   border?: boolean;
 }
 
-export default function Actions(props: IActions) {
+export default function Actions(props: IActions): JSX.Element {
   const { text, border = false, ...rest } = props;
 
   return (

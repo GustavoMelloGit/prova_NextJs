@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <section>
       <p>Olá mundo</p>
-    </div>
+    </section>
   );
 };
 

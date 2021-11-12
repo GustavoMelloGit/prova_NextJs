@@ -12,15 +12,6 @@ const GlobalStyles = createGlobalStyle`
     }
     html{
         font-size: 62.5%;
-        @media(max-width: 800px){
-            font-size: 50%;
-        }
-        @media(max-width: 650px){
-            font-size: 30%;
-        }
-        @media(max-width: 390px){
-            font-size: 25%;
-        }
     }
     ul{
         list-style: none;

@@ -19,5 +19,8 @@ const theme = {
     SemiBold: 600,
     Bold: 700,
   },
+  sizes: {
+    layout_max_width: 150,
+  },
 };
 export default theme;

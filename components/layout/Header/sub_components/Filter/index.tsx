@@ -10,7 +10,7 @@ const DUMMY_DATA = {
   ends_at: "2021-12-12",
 };
 
-export default function Filter() {
+export default function Filter(): JSX.Element {
   const begin_at = formatDate(DUMMY_DATA.begin_at);
   const ends_at = formatDate(DUMMY_DATA.ends_at);
   const location = DUMMY_DATA.location;

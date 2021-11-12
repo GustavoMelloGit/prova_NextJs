@@ -3,7 +3,8 @@ import theme from "../../../../../global/theme";
 
 export const Container = styled.div`
   height: 3.2rem;
-  width: 54rem; //alterar para max
+  width: 35%;
+  max-width: 54rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
