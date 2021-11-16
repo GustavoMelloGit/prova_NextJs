@@ -12,10 +12,17 @@ const GlobalStyles = createGlobalStyle`
     }
     html{
         font-size: 62.5%;
+        @media (max-width: 1024px) {
+            font-size: 60%;
+        }
+        @media (max-width: 768px) {
+            font-size: 50%;
+        }
     }
     ul{
         list-style: none;
         display: inline-flex;
+        padding: 0;
         li:not(:last-child){
             margin-right: 4rem;
         }

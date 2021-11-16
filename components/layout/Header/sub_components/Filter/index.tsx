@@ -19,15 +19,15 @@ export default function Filter(): JSX.Element {
     <Container>
       <InfosWrapper>
         <ImLocation size={14} color={theme.colors.gray_3} />
-        {location}
+        <span>{location}</span>
       </InfosWrapper>
       <InfosWrapper>
         <BsFillCalendarWeekFill size={14} color={theme.colors.gray_3} />
-        {begin_at}
+        <span>{begin_at}</span>
       </InfosWrapper>
       <InfosWrapper>
         <BsFillCalendarWeekFill size={14} color={theme.colors.gray_3} />
-        {ends_at}
+        <span>{ends_at}</span>
       </InfosWrapper>
       <SearchWrapper>
         <BsSearch size={14} color={theme.colors.blue} />

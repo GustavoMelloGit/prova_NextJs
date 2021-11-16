@@ -8,7 +8,7 @@ export const Container = styled.div`
 `;
 
 export const CarGrid = styled.div`
-  width: ${theme.sizes.layout_max_width}rem;
+  max-width: ${theme.sizes.layout_max_width}rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   column-gap: 5rem;

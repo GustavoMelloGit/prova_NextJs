@@ -5,13 +5,19 @@ export const Container = styled.div`
   height: 3.2rem;
   width: 35%;
   max-width: 54rem;
-  min-width: 40rem;
+  min-width: 36rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 100px;
   background-color: ${theme.colors.gray_2};
   padding-left: 3rem;
+  span {
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const SearchWrapper = styled.button`
