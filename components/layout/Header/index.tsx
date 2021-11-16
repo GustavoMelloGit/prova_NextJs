@@ -3,10 +3,15 @@ import { Content, Navbar, NavButton, NavMenu } from "./styles";
 import Button from "./sub_components/Actions";
 import Modal from "./sub_components/Modal";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Header(): JSX.Element {
   const [modalVisible, setModalVisible] = useState(false);
+  const router = useRouter();
 
+  function handleLogoClicked(): void {
+    router.push("/");
+  }
   function handleChangeModalVisible(): void {
     setModalVisible((prev) => !prev);
   }
@@ -14,7 +19,7 @@ export default function Header(): JSX.Element {
     <>
       <Navbar>
         <Content>
-          <h1>
+          <h1 onClick={handleLogoClicked}>
             Exotic <span>cars</span>
           </h1>
           <Filter />

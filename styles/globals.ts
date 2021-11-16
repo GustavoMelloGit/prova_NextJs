@@ -1,11 +1,12 @@
 import { createGlobalStyle } from "styled-components";
+import theme from "../global/theme";
 
 const GlobalStyles = createGlobalStyle`
     body{
         margin: 0;
         padding: 0;
         background-color: #F7F7F7;
-        font-family: "Arimo";
+        font-family: ${theme.fonts.primary};
     }
     *{
         box-sizing: border-box;

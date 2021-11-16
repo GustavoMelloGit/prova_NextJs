@@ -6,11 +6,12 @@ import { ICarProps } from "../../../../models/Car";
 
 interface ICarItem {
   car: ICarProps;
+  onClick: (id: number) => void;
 }
-export default function CarItem({ car }: ICarItem) {
+export default function CarItem({ car, onClick }: ICarItem) {
   return (
     <Card>
-      <CarItemContainer>
+      <CarItemContainer onClick={() => onClick(car.id)}>
         <Header>
           <h1>{car.brand}</h1>
           <BiDotsHorizontalRounded size={30} fill="#C8C8CA" />

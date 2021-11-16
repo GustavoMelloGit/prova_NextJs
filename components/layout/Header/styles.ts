@@ -8,7 +8,7 @@ export const Navbar = styled.nav`
   position: absolute;
   top: 0;
   height: ${theme.sizes.header_height}rem;
-  width: 100vw;
+  width: 100%;
   padding: 0 5%;
 
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -36,6 +36,7 @@ export const Content = styled.div`
     font-family: ${theme.fonts.primary};
     font-weight: ${theme.fontWeights.SemiBold};
     text-transform: uppercase;
+    cursor: pointer;
 
     span {
       font-weight: ${theme.fontWeights.light};
