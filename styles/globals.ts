@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
     html{
         font-size: 62.5%;
         @media (max-width: 1024px) {
-            font-size: 60%;
+            font-size: 55%;
         }
         @media (max-width: 768px) {
             font-size: 50%;
