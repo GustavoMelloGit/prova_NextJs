@@ -21,6 +21,7 @@ const theme = {
   },
   sizes: {
     layout_max_width: 150,
+    header_height: 6.4,
   },
 };
 export default theme;

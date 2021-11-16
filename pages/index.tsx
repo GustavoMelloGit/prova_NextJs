@@ -1,13 +1,8 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
+import { CarsGrid } from "../components";
 
 const Home: NextPage = () => {
-  return (
-    <section>
-      <p>Olá mundo</p>
-    </section>
-  );
+  return <CarsGrid />;
 };
 
 export default Home;

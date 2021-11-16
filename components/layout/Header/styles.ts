@@ -4,8 +4,10 @@ import theme from "../../../global/theme";
 export const Navbar = styled.nav`
   display: flex;
   justify-content: center;
-  height: 6.4rem;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  height: ${theme.sizes.header_height}rem;
+  width: 100vw;
   padding: 0 12rem;
 
   background: #ffffff 0% 0% no-repeat padding-box;
