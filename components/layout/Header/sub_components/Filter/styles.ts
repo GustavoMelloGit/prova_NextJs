@@ -33,6 +33,11 @@ export const SearchWrapper = styled.button`
   box-shadow: 0px 3px 15px #00000014;
   opacity: 1;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  :hover {
+    transform: scale(1.2);
+  }
 `;
 
 export const InfosWrapper = styled.div`

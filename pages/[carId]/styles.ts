@@ -50,3 +50,10 @@ export const CarHero = styled.div`
     font-weight: lighter;
   }
 `;
+
+export const ImageWrapper = styled.div`
+  height: auto;
+  width: 40vw;
+  min-width: 30rem;
+  min-height: 30rem;
+`;
