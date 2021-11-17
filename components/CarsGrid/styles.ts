@@ -12,6 +12,7 @@ export const Container = styled.div`
 export const CarGrid = styled.div`
   display: grid;
   justify-content: center;
+  align-items: center;
   height: 100%;
   max-width: ${theme.sizes.layout_max_width}rem;
   grid-template-columns: repeat(auto-fit, minmax(0, 270px));

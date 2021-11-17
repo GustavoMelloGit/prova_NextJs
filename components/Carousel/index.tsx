@@ -13,38 +13,40 @@ import {
   BsFillArrowLeftCircleFill,
   BsFillArrowRightCircleFill,
 } from "react-icons/bs";
-import { useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 
 interface IImageCarousel {
   data: ICarProps;
+  setSelectedCar: Dispatch<SetStateAction<number>>;
+  selectedCar: number;
 }
-export default function ImageCarousel({ data }: IImageCarousel) {
-  const [selectedImage, setSelectedImage] = useState(0);
+export default function ImageCarousel(props: IImageCarousel) {
+  const { data, setSelectedCar, selectedCar } = props;
 
   function handlePrevImage() {
-    if (selectedImage > 0) {
-      setSelectedImage((prev) => prev - 1);
+    if (selectedCar > 0) {
+      setSelectedCar((prev) => prev - 1);
     } else {
-      setSelectedImage(data.colors.length - 1);
+      setSelectedCar(data.colors.length - 1);
     }
   }
   function handleNextImage() {
-    if (selectedImage < data.colors.length - 1) {
-      setSelectedImage((prev) => prev + 1);
+    if (selectedCar < data.colors.length - 1) {
+      setSelectedCar((prev) => prev + 1);
     } else {
-      setSelectedImage(0);
+      setSelectedCar(0);
     }
   }
 
   function handleCarClicked(id: number) {
-    setSelectedImage(id);
+    setSelectedCar(id);
   }
 
   const { colors } = data;
   const cars = colors.map((car) => (
     <Slide key={car.id} onClick={handleCarClicked.bind(null, car.id - 1)}>
       <Content
-        className={selectedImage + 1 === car.id ? "selected" : "not_selected"}
+        className={selectedCar + 1 === car.id ? "selected" : "not_selected"}
       >
         <ImageWrapper>
           <Image
@@ -69,7 +71,7 @@ export default function ImageCarousel({ data }: IImageCarousel) {
           showArrows={false}
           showStatus={false}
           showIndicators={false}
-          selectedItem={selectedImage}
+          selectedItem={selectedCar}
           centerMode
           centerSlidePercentage={33.333}
         >

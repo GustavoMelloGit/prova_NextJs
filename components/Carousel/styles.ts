@@ -19,14 +19,24 @@ export const Container = styled.div`
       transform: scale(1.2);
     }
   }
+
+  @media screen and (max-width: ${theme.sizes.small_big}px) {
+    .slide {
+      min-width: 100% !important;
+    }
+  }
 `;
 
 export const Slide = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25rem;
+  height: 20rem;
   max-width: 50rem;
+
+  @media screen and (max-width: ${theme.sizes.small_big}px) {
+    width: 100%;
+  }
 `;
 
 export const Content = styled.div`

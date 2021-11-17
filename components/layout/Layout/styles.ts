@@ -7,6 +7,7 @@ export const Container = styled.main`
   max-height: 100vh;
   section {
     background-color: white;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
   }
 `;

@@ -9,7 +9,9 @@ export const ButtonContainer = styled.button<Props>`
   align-items: center;
   justify-content: center;
   width: 15rem;
+  min-width: 130px;
   height: 4rem;
+  min-height: 32px;
 
   border-radius: 25px;
   background: ${(props) => (props.filled ? "#313136" : "transparent")};

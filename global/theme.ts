@@ -22,6 +22,13 @@ const theme = {
   sizes: {
     layout_max_width: 150,
     header_height: 6.4,
+    large: 1440,
+    normal: 1024,
+    small_big: 768,
+    small_medium: 600,
+    mobile_big: 425,
+    mobile_medium: 375,
+    mobile_small: 320,
   },
 };
 export default theme;

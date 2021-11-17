@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import theme from "../../global/theme";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 export const Container = styled.div`
   display: flex;
@@ -9,7 +8,8 @@ export const Container = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: ${theme.sizes.header_height + 3}rem 9rem 0 9rem;
+  min-height: 100vh;
+  padding: ${theme.sizes.header_height + 3}rem 10rem 6rem 10rem;
 
   background: transparent linear-gradient(125deg, #ffffff 0%, #d8d7d7 100%) 0%
     0% no-repeat padding-box;
@@ -49,11 +49,19 @@ export const CarHero = styled.div`
     font-size: 3rem;
     font-weight: lighter;
   }
+
+  @media screen and (max-width: ${theme.sizes.small_big}px) {
+    flex-direction: column;
+
+    .color {
+      align-self: flex-end;
+    }
+  }
 `;
 
 export const ImageWrapper = styled.div`
   height: auto;
   width: 40vw;
-  min-width: 30rem;
+  min-width: 300px;
   min-height: 30rem;
 `;
