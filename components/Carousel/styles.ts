@@ -6,11 +6,12 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 40rem;
+  max-width: ${theme.sizes.layout_max_width}rem;
+  height: fit-content;
 
   .arrow {
-    height: 4rem;
-    width: 4rem;
+    min-height: 4rem;
+    min-width: 4rem;
     fill: #313136;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -25,13 +26,16 @@ export const Slide = styled.div`
   align-items: center;
   justify-content: center;
   height: 25rem;
+  max-width: 50rem;
 `;
 
 export const Content = styled.div`
   position: relative;
   background-color: ${theme.colors.gray_3};
-  height: 20rem;
-  width: 30rem;
+  height: 70%;
+  min-height: 5rem;
+  width: 90%;
+  max-width: 30rem;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   &.selected {
@@ -43,8 +47,13 @@ export const Content = styled.div`
   }
 `;
 
+export const CarouselWrapper = styled.div`
+  height: 100%;
+  width: 90%;
+  max-width: ${theme.sizes.layout_max_width - 8}rem;
+`;
 export const ImageWrapper = styled.div`
   position: absolute;
-  height: 40rem;
-  width: 40rem;
+  height: 120%;
+  width: 120%;
 `;

@@ -1,4 +1,10 @@
-import { Container, Content, ImageWrapper, Slide } from "./styles";
+import {
+  CarouselWrapper,
+  Container,
+  Content,
+  ImageWrapper,
+  Slide,
+} from "./styles";
 import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -56,18 +62,20 @@ export default function ImageCarousel({ data }: IImageCarousel) {
   return (
     <Container>
       <BsFillArrowLeftCircleFill className="arrow" onClick={handlePrevImage} />
-      <Carousel
-        showThumbs={false}
-        infiniteLoop
-        showArrows={false}
-        showStatus={false}
-        showIndicators={false}
-        selectedItem={selectedImage}
-        centerMode
-        centerSlidePercentage={33.333}
-      >
-        {cars}
-      </Carousel>
+      <CarouselWrapper>
+        <Carousel
+          showThumbs={false}
+          infiniteLoop
+          showArrows={false}
+          showStatus={false}
+          showIndicators={false}
+          selectedItem={selectedImage}
+          centerMode
+          centerSlidePercentage={33.333}
+        >
+          {cars}
+        </Carousel>
+      </CarouselWrapper>
       <BsFillArrowRightCircleFill className="arrow" onClick={handleNextImage} />
     </Container>
   );
