@@ -1,3 +1,15 @@
+//Utils
+import Image from "next/image";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import { ICarProps } from "@models/Car";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
+
+//Styles
+import {
+  BsFillArrowLeftCircleFill,
+  BsFillArrowRightCircleFill,
+} from "react-icons/bs";
 import {
   CarouselWrapper,
   Container,
@@ -5,17 +17,7 @@ import {
   ImageWrapper,
   Slide,
 } from "./styles";
-import Image from "next/image";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import { ICarProps } from "../../models/Car";
-import {
-  BsFillArrowLeftCircleFill,
-  BsFillArrowRightCircleFill,
-} from "react-icons/bs";
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
-//Utils
-//Styles
+
 //Components
 interface IImageCarousel {
   data: ICarProps;

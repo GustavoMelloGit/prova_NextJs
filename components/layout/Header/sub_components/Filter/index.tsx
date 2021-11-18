@@ -1,11 +1,14 @@
+//Utils
+import { formatDate } from "@helpers/format";
+
+//Styles
 import { Container, InfosWrapper, SearchWrapper } from "./styles";
 import { BsSearch, BsFillCalendarWeekFill } from "react-icons/bs";
 import { ImLocation } from "react-icons/im";
-import theme from "../../../../../global/theme";
-import { formatDate } from "../../../../../helpers/format";
-//Utils
-//Styles
+import theme from "@global/theme";
+
 //Components
+
 const DUMMY_DATA = {
   location: "North Carolina, NC 90025",
   begin_at: "2021-03-11",

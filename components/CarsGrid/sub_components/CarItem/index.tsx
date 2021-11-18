@@ -1,11 +1,11 @@
+//Utils
 import Image from "next/image";
-import Card from "../Card";
+import { ICarProps } from "@models/Car";
+//Styles
 import { BiDotsHorizontalRounded } from "react-icons/bi";
 import { CarItemContainer, CarPrice, Header } from "./styles";
-import { ICarProps } from "../../../../models/Car";
-//Utils
-//Styles
 //Components
+import Card from "../Card";
 interface ICarItem {
   car: ICarProps;
   onClick: (id: number) => void;

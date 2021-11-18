@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import theme from "../../../global/theme";
+import theme from "@global/theme";
 import { BiMenuAltRight } from "react-icons/bi";
 
 export const Navbar = styled.nav`

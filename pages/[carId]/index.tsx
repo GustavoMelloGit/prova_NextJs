@@ -1,12 +1,11 @@
+//Utils
 import { GetStaticPaths, GetStaticProps } from "next";
 import api from "@data/api.json";
-import { ICarProps } from "@models/Car";
-import CarDetails from "@components/CarDetails";
-//Utils
 import Head from "next/head";
+import { ICarProps } from "@models/Car";
 
-//Styles
 //Components
+import { CarDetails } from "@components/index";
 interface ICarDetailsProps {
   car: ICarProps | undefined;
 }

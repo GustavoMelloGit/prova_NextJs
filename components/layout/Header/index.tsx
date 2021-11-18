@@ -1,12 +1,13 @@
-import Filter from "./sub_components/Filter";
-import { Content, Navbar, NavButton, NavMenu } from "./styles";
-import Button from "./sub_components/Actions";
-import Modal from "./sub_components/Modal";
+//Utils
 import { useState } from "react";
 import { useRouter } from "next/router";
-//Utils
 //Styles
+import { Content, Navbar, NavButton, NavMenu } from "./styles";
 //Components
+import Modal from "./sub_components/Modal";
+import Button from "./sub_components/Actions";
+import Filter from "./sub_components/Filter";
+
 export default function Header(): JSX.Element {
   const [modalVisible, setModalVisible] = useState(false);
   const router = useRouter();

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import type { NextPage } from "next";
-import { CarsGrid } from "../components";
+import { CarsGrid } from "@components/index";
 
 const Home: NextPage = () => {
   return (

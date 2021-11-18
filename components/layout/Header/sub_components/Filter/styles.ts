@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import theme from "../../../../../global/theme";
+import theme from "@global/theme";
 
 export const Container = styled.div`
   height: 3.2rem;
