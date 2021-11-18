@@ -9,7 +9,7 @@ import CarItem from "./sub_components/CarItem";
 export default function CarsGrid(): JSX.Element {
   const router = useRouter();
   function handleCarClicked(id: number) {
-    router.push(`/${id}`);
+    router.push(`/car/${id}`);
   }
 
   const cars = api.cars.map((car) => (
