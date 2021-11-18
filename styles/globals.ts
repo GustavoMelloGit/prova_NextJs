@@ -13,14 +13,14 @@ const GlobalStyles = createGlobalStyle`
     }
     html{
         font-size: 62.5%;
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: ${theme.sizes.normal}px) {
             font-size: 55%;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: ${theme.sizes.small_big}px) {
             font-size: 50%;
         }
         @media screen and (max-width: ${theme.sizes.small_medium}px) {
-            font-size: 45%;
+            font-size: 40%;
         }
     }
     ul{

@@ -13,15 +13,35 @@ import {
   BsFillArrowLeftCircleFill,
   BsFillArrowRightCircleFill,
 } from "react-icons/bs";
-import { Dispatch, SetStateAction } from "react";
-
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
+//Utils
+//Styles
+//Components
 interface IImageCarousel {
   data: ICarProps;
   setSelectedCar: Dispatch<SetStateAction<number>>;
   selectedCar: number;
 }
 export default function ImageCarousel(props: IImageCarousel) {
+  const [windowSize, setWindowSize] = useState(33.3333);
   const { data, setSelectedCar, selectedCar } = props;
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setWindowSize(33.3333);
+      }
+      if (window.innerWidth < 768) {
+        setWindowSize(100);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   function handlePrevImage() {
     if (selectedCar > 0) {
@@ -73,7 +93,7 @@ export default function ImageCarousel(props: IImageCarousel) {
           showIndicators={false}
           selectedItem={selectedCar}
           centerMode
-          centerSlidePercentage={33.333}
+          centerSlidePercentage={windowSize}
         >
           {cars}
         </Carousel>

@@ -19,12 +19,6 @@ export const Container = styled.div`
       transform: scale(1.2);
     }
   }
-
-  @media screen and (max-width: ${theme.sizes.small_big}px) {
-    .slide {
-      min-width: 100% !important;
-    }
-  }
 `;
 
 export const Slide = styled.div`

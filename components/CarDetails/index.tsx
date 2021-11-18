@@ -1,11 +1,13 @@
 import { useRouter } from "next/router";
-import { useState } from "react";
 import { ICarProps } from "../../models/Car";
 import { CarHero, CarInfo, Container, ImageWrapper } from "./styles";
 import Image from "next/image";
-import CarDetailsButton from "./Button";
+import CarDetailsButton from "./sub_components/Button";
 import ImageCarousel from "../Carousel";
-
+import { useState } from "react";
+//Utils
+//Styles
+//Components
 interface ICarDetailsProps {
   car: ICarProps | undefined;
 }

@@ -13,6 +13,10 @@ export const Container = styled.div`
 
   background: transparent linear-gradient(125deg, #ffffff 0%, #d8d7d7 100%) 0%
     0% no-repeat padding-box;
+
+  @media screen and (max-width: ${theme.sizes.mobile_medium}px) {
+    padding: ${theme.sizes.header_height + 3}rem 3rem 3rem 3rem;
+  }
 `;
 
 export const CarInfo = styled.div`

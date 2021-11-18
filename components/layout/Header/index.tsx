@@ -4,7 +4,9 @@ import Button from "./sub_components/Actions";
 import Modal from "./sub_components/Modal";
 import { useState } from "react";
 import { useRouter } from "next/router";
-
+//Utils
+//Styles
+//Components
 export default function Header(): JSX.Element {
   const [modalVisible, setModalVisible] = useState(false);
   const router = useRouter();

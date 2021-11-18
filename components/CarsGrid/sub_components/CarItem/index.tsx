@@ -3,7 +3,9 @@ import Card from "../Card";
 import { BiDotsHorizontalRounded } from "react-icons/bi";
 import { CarItemContainer, CarPrice, Header } from "./styles";
 import { ICarProps } from "../../../../models/Car";
-
+//Utils
+//Styles
+//Components
 interface ICarItem {
   car: ICarProps;
   onClick: (id: number) => void;
