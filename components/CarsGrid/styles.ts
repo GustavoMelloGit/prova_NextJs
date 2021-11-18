@@ -17,4 +17,8 @@ export const CarGrid = styled.div`
   max-width: ${theme.sizes.layout_max_width}rem;
   grid-template-columns: repeat(auto-fit, minmax(0, 270px));
   gap: 2rem;
+
+  @media screen and (max-width: ${theme.sizes.mobile_big}px) {
+    grid-template-columns: repeat(auto-fit, minmax(0, 350px));
+  }
 `;

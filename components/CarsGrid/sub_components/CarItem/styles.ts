@@ -28,6 +28,10 @@ export const Header = styled.div`
   h1 {
     font-family: ${theme.fonts.primary};
     font-weight: ${theme.fontWeights.Bold};
+
+    @media screen and (max-width: ${theme.sizes.mobile_big}px) {
+      font-size: 2.3rem;
+    }
   }
 `;
 
@@ -36,6 +40,10 @@ export const CarPrice = styled.span`
   font-size: 2rem;
   font-family: ${theme.fonts.primary};
   font-weight: ${theme.fontWeights.Bold};
+
+  @media screen and (max-width: ${theme.sizes.mobile_big}px) {
+    font-size: 3rem;
+  }
   sup {
     font-size: 0.7em;
   }
