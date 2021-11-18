@@ -1,6 +1,6 @@
 //Utils
 import { GetStaticPaths, GetStaticProps } from "next";
-import api from "@data/api.json";
+import api from "@mocks/cars.json";
 import Head from "next/head";
 import { ICarProps } from "@models/Car";
 

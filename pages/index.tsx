@@ -18,3 +18,6 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+//Diminuir o padding do layout em mobile
+//Adicionar pasta mocks para guardar DUMMY_DATA e o arquivo api.json

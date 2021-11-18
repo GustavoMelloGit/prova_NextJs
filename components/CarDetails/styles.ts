@@ -45,6 +45,7 @@ export const CarHero = styled.div`
 
   .color {
     align-self: flex-start;
+    text-align: center;
   }
   h1 {
     font-size: 5rem;
@@ -52,6 +53,7 @@ export const CarHero = styled.div`
   span {
     font-size: 3rem;
     font-weight: lighter;
+    text-transform: capitalize;
   }
 
   @media screen and (max-width: ${theme.sizes.small_big}px) {

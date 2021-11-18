@@ -17,10 +17,10 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["components/*"],
-      "@global/*": ["global/*"],
-      "@helpers/*": ["helpers/*"],
-      "@data/*":["data/*"],
-      "@models/*":["models/*"]
+      "@mocks/*": ["shared/mocks/*"],
+      "@global/*": ["shared/global/*"],
+      "@helpers/*": ["shared/helpers/*"],
+      "@models/*": ["shared/models/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

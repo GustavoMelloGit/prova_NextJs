@@ -1,6 +1,6 @@
 //Utils
 import { useRouter } from "next/router";
-import api from "@data/api.json";
+import api from "@mocks/cars.json";
 //Styles
 import { CarGrid, Container } from "./styles";
 //Components

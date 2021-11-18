@@ -22,7 +22,7 @@ export default function CarDetails({ car }: ICarDetailsProps) {
   if (!car) {
     return <div>Car not found</div>;
   }
-  const { brand, model, price, image, logo, colors } = car;
+  const { brand, model, price, logo, colors } = car;
 
   function handleBackToCatalog() {
     router.push("/");
@@ -56,8 +56,8 @@ export default function CarDetails({ car }: ICarDetailsProps) {
           />
         </ImageWrapper>
         <div className="color">
-          <h1>01</h1>
-          <span>Red</span>
+          <h1>{("0" + (selectedCar + 1)).slice(-2)}</h1>
+          <span>{colors[selectedCar].color}</span>
         </div>
       </CarHero>
       <CarDetailsButton filled text="Book now" onClick={() => {}} />
